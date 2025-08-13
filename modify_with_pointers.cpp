@@ -19,22 +19,19 @@ int main(){
     int *p_a = &a ; 
     double *p_b = &b;
     char *p_c = &c;
-    int *p_arr = arr; //points to the first element of the array
+    
 
     //step 3 - change values via pointers
     *p_a = 42;
     *p_b = 42.690;
     *p_c = 'Z';
-    *(p_arr + 0) = 10; //change first element
-    *(p_arr + 1) = 20; //change second element
-    *(p_arr + 2) = 30; //change third element
+   
 
-    //step 4 - print modified values
+    //print modified values
     cout << "Modified values:" << endl;
     cout << "a: " << a << endl;
     cout << "b: " << b << endl;
     cout << "c: " << c << endl;
-    cout << "arr: " << arr[0] << ", " << arr[1] << ", " << arr[2] << endl;
 
     return 0;
 }
